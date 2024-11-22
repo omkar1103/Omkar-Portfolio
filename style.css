@@ -1,32 +1,130 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
-    --primary-color:#fff ;
-    --secondary-color:#333;
-    --main-color:#754ef9;
+:root {
+    --primary-color: #fff;
+    --secondary-color: #333;
+    --main-color: #754ef9;
 }
-body{
+
+[data-theme="dark"] {
+    --primary-color: #121212;
+    --secondary-color: #e0e0e0;
+    --main-color: #bb86fc;
+}
+
+body {
     font-family: "Jost", sans-serif;
     font-weight: 400;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    
 }
 
-a{
-    color: var(--secondary-color);
+a {
     text-decoration: none;
 }
 
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    background: transparent;
+    transition: 0.3s background;
+}
 
-.navbar-nav .nav-item {
-    margin-right: 50px; /* Adds space between the list items */
-  }
+.main-header .navbar {
+    padding: 15px;
+}
 
-  /* Optional: Remove margin from the last item for better alignment */
-  .navbar-nav .nav-item:last-child {
-    margin-right: 0;
-  }
+.main-header .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-  
+.main-header .navbar-nav > li {
+    padding: 0 10px;
+}
+
+.main-header .navbar-nav > li > .nav-link {
+    padding: 0 5px;
+    line-height: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--secondary-color);
+    letter-spacing: 3px;
+    position: relative;
+}
+
+.main-header .navbar-nav > li > .nav-link::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   width: 0%;
+   height: 2px;
+   background-color: var(--main-color);
+   transition: ease all 0.3s;
+}
+
+.main-header .navbar-nav > li > .nav-link:hover{
+    color: var(--main-color);
+}
+
+.main-header .navbar-nav > li > .nav-link:hover::after {
+    left: 0;
+    right: auto;
+    width: 100%; 
+}
+@media (max-width: 991px) {
+    .main-header .navbar-collapse{
+        border-bottom:2px solid var(--secondary-color) ;
+        border-top: 2px solid var(--secondary-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:#fff;
+
+
+    }
+    .main-header .navbar-nav > li + li {
+        border-top: 1px solid rgba(55, 55, 55, 0.2);
+        width: 100%; 
+    }
+
+    .main-header .navbar-nav > li > .nav-link {
+        line-height: 50px;
+    }
+
+    .main-header .navbar-nav > li > .nav-link:hover::after {
+        display: none;
+    }
+    .main-header .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Stack the items vertically */
+        align-items: flex-start; /* Align items to the left */
+        text-align: left; /* Ensure text is aligned to the left */
+    }
+
+    .main-header .navbar-toggler {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        padding-top: 4px;
+        padding-right: 9px;
+        outline: none;
+        box-shadow: none;
+    }
+
+    .main-header .navbar-toggler span {
+        width: 25px;
+        height: 2px;
+        background: var(--secondary-color);
+        margin: 4px;
+        transition: 0.3s;
+    }
+}

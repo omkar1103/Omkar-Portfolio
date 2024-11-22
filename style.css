@@ -1,0 +1,32 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color:#fff ;
+    --secondary-color:#333;
+    --main-color:#754ef9;
+}
+body{
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Adds space between the list items */
+  }
+
+  /* Optional: Remove margin from the last item for better alignment */
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+
+  

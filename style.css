@@ -252,7 +252,7 @@ main{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1;
+    z-index: 2;
 }
 
 .anim-elements .anim-element {
@@ -263,14 +263,14 @@ main{
 .anim-elements .anim-element:nth-child(1) {
     top: 10%;
     left: 20%;
-    color: rgb(226, 148, 32);
-    animation: aniOne 12s infinite alternate ease-in-out;
+    color:#61dbfb;
+    animation: aniOne 13s infinite alternate ease-in-out;
 }
 
 .anim-elements .anim-element:nth-child(2) {
     bottom: 15%;
     left: 45%;
-    color: var(--main-color);
+    color:  green;
     animation: aniTwo 14s infinite alternate ease-in-out;
 }
 
@@ -284,7 +284,7 @@ main{
 .anim-elements .anim-element:nth-child(4) {
     bottom: 15%;
     right: 25%;
-    color: var(--main-color);
+    color:   rgb(226, 148, 32);
     animation: aniFour 13s infinite alternate ease-in-out;
 }
 
@@ -298,40 +298,55 @@ main{
 /* Keyframes */
 @keyframes aniOne {
     0% { transform: translate(0, 0) rotate(0); }
-    25% { transform: translate(40px, 50px) rotate(45deg); }
-    50% { transform: translate(-30px, 60px) rotate(90deg); }
-    75% { transform: translate(50px, -40px) rotate(135deg); }
+    40% { transform: translate(141px, 72px) rotate(75deg); }
+    80% { transform: translate(-40px, 72px) rotate(145deg); }
     100% { transform: translate(0, 0) rotate(0); }
 }
 
 @keyframes aniTwo {
-    0% { transform: translate(0, 0) scale(1); }
-    20% { transform: translate(60px, -30px) scale(1.2); }
-    50% { transform: translate(-40px, 50px) scale(0.9); }
-    80% { transform: translate(30px, -20px) scale(1.1); }
-    100% { transform: translate(0, 0) scale(1); }
+    0% { transform: translate(0, 0) rotate(0) scale(1); }
+    20% { transform: translate(73px, -1px) rotate(36deg) scale(.9); }
+    60% { transform: translate(83px, 122px) rotate(108deg) scale(1.2); }
+    100% { transform: translate(0, 0) rotate(0) scale(1); }
 }
 
 @keyframes aniThree {
-    0% { transform: translate(0, 0) rotate(0); }
-    30% { transform: translate(-50px, 60px) rotate(-45deg); }
-    60% { transform: translate(70px, -40px) rotate(90deg); }
-    100% { transform: translate(0, 0) rotate(0); }
+    0% { transform: translate(-300px, 151px) rotate(0); }
+    100% { transform: translate(251px, -200px) rotate(180)deg; }
 }
 
 @keyframes aniFour {
-    0% { transform: translate(0, 0) rotate(0); }
-    25% { transform: translate(30px, -50px) rotate(30deg); }
-    50% { transform: translate(-60px, 40px) rotate(60deg); }
-    75% { transform: translate(40px, 20px) rotate(-30deg); }
-    100% { transform: translate(0, 0) rotate(0); }
+    0% { transform: translate(61px, -99px) rotate(0); }
+    20% { transform: translate(4px, -190px) rotate(38deg); }
+    60% { transform: translate(-263px, -164px) rotate(108deg); }
+    100% { transform: translate(-1px, 0) rotate(108deg); }
 }
 
 @keyframes aniFive {
     0% { transform: translate(0, 0) rotate(0); }
-    20% { transform: translate(-50px, 20px) rotate(20deg); }
-    40% { transform: translate(50px, -30px) rotate(80deg); }
-    60% { transform: translate(-20px, 40px) rotate(150deg); }
+    20% { transform: translate(120px, -29px) rotate(20deg); }
+    40% { transform: translate(84px, -30px) rotate(80deg); }
     100% { transform: translate(0, 0) rotate(0); }
 }
 
+.custom-button {
+    background-color: #aac60e; /* Green background */
+    color: white;             /* White text */
+    border: none;             /* Remove border */
+    padding: 12px 24px;       /* Add padding */
+    text-align: center;       /* Center text */
+    font-size: 16px;          /* Font size */
+    font-weight: bold;        /* Bold text */
+    border-radius: 8px;       /* Rounded corners */
+    cursor: pointer;          /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.custom-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.custom-button:active {
+    background-color: #3e8e41; /* Even darker green when clicked */
+    transform: scale(0.95);    /* Slightly shrink on click */
+}

@@ -391,3 +391,42 @@ main{
     
 }
 
+.feature-box{
+    padding: 40px;
+    border: 2px solid var(--secondary-color);
+    box-shadow: 0 0 0 0 var(--secondary-color);
+    display: flex;
+    transition: 0.3s;
+}
+.feature-box:hover{
+    box-shadow: 5px 5px 0 0 var(--secondary-color) ;
+
+}
+
+@media (max-width:767px) {
+    .feature-box{
+        padding: 30px;
+    }  
+}
+
+.feature-box h5{
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+@media (max-width:767px) {
+    .feature-box h5{
+        font-size: 24px;
+    }  
+}
+
+.feature-box p{
+    margin: 0;
+    color: var(--secondary-color);
+    font-size: 17px;
+}
+
+
+

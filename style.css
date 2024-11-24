@@ -350,3 +350,44 @@ main{
     background-color: #3e8e41; /* Even darker green when clicked */
     transform: scale(0.95);    /* Slightly shrink on click */
 }
+
+.section-heading{
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .section-heading{
+        padding-bottom: 40px;
+    }
+    
+}
+@media (max-width:991px) {
+    .section-heading{
+        padding-bottom: 40px;
+    }
+    
+}
+.section-heading h3{
+    font-size: 50px ;
+    margin: 0%;
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform:uppercase ;
+
+}
+
+@media (max-width:767px) {
+    .section-heading h3{
+        font-size: 45px ;   
+     }
+    
+}
+@media (max-width:991px) {
+    .section-heading h3{
+        font-size: 38px ;
+        }
+    
+}
+

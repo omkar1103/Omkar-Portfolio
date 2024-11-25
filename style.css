@@ -467,7 +467,35 @@ main{
     padding-left: 16px;
 
 }
+.contact-form{
+    border: 2px solid var(--secondary-color);
+    padding: 35px;
+    background-attachment: #fff;
 
+}
+
+@media (max-width:767px) {
+    .feature-box h5{
+        padding: 25px;
+    }  
+}
+
+.skill-img img {
+    height: 400px;
+    max-width: 100%; /* Ensures the image width scales responsively */
+    height: auto; 
+    text-align: center;
+    margin-top: 90px;
+    width: 400px; /* Default width for larger screens */
+}
+
+@media (max-width: 767px) {
+    .skill-img img {
+        width: 200px; /* Scales down the image width on smaller screens */
+        height: 150px; /* Maintains aspect ratio for smaller screens */
+        margin-top: 25px;
+    }
+}
 
 
 

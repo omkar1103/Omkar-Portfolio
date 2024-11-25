@@ -482,20 +482,116 @@ main{
 
 .skill-img img {
     height: 400px;
-    max-width: 100%; /* Ensures the image width scales responsively */
+    max-width: 100%; 
     height: auto; 
     text-align: center;
+    align-items: center; 
     margin-top: 90px;
-    width: 400px; /* Default width for larger screens */
+    width: 400px; 
 }
 
 @media (max-width: 767px) {
     .skill-img img {
-        width: 200px; /* Scales down the image width on smaller screens */
-        height: 150px; /* Maintains aspect ratio for smaller screens */
+        width: 200px; 
+        height: 150px;
         margin-top: 25px;
     }
 }
+.contact-form{
+    border: 2px solid var(--secondary-color);
+    padding: 35px;
+    background:#fff;
+    
+}
+@media (max-width: 767px) {
+    .contact-form{
+        padding: 25px;
+      
+        
+    }
+}
+
+.contact-form .lead{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+
+.contact-form .form-control{
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    box-shadow: none;
+    padding: 0.575rem .75rem;
+
+}
+
+.contact-img img{
+    height: 400px;
+    width: 400px;
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+@media (max-width: 767px) {
+    .contact-img img{
+       
+        height: 200px;
+        width: 200px;
+        margin-top: 45px;
+        margin-right: 55px;
+    }
+}
+
+.contact-infos{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 
 
+}
 
+.contact-infos li{
+    display: flex;
+    position: relative;
+    padding-bottom: 35px;
+}
+
+.contact-infos li:last-child{
+    padding-bottom: 0;
+}
+
+.contact-infos .icon{
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+.contact-infos h5{
+    font-size: 14px;
+    margin: 0 0 5px;
+    color:rgba(255 ,255,255,0.8) ;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+
+}
+
+.contact-infos p{
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+    font-weight:500 ;
+}
+.bg-1{
+    background-color: #50938c;
+}
+.bg-2{
+    background-color: rgb(203, 203, 18);
+}
+.bg-3{
+    background-color: rgb(31, 31, 179);
+}

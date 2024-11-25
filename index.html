@@ -146,10 +146,10 @@
                         <div class="section-heading text-start">
                             <h3>My Skills</h3>
                         </div>
-                        <div class="skill-box">
+                        <div class="skill-box" style="height: fit-content;">
                             <div class="row gy-3">
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-html5"></i>
                                         </div>
@@ -157,7 +157,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small">
                                         <div class="icon">
                                             <i class="bx bxl-css3"></i>
                                         </div>
@@ -165,7 +165,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small">
                                         <div class="icon">
                                             <i class="bx bxl-javascript"></i>
                                         </div>
@@ -173,7 +173,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-java"></i>
                                         </div>
@@ -181,7 +181,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-spring-boot"></i>
                                         </div>
@@ -189,7 +189,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-postgresql"></i>
                                         </div>
@@ -197,7 +197,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-react"></i>
                                         </div>
@@ -205,7 +205,7 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-c-plus-plus"></i>
                                         </div>
@@ -213,11 +213,19 @@
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-4 col-lg-6">
-                                    <div class="feature-box feature-box-small bg-1">
+                                    <div class="feature-box feature-box-small ">
                                         <div class="icon">
                                             <i class="bx bxl-github"></i>
                                         </div>
                                         <h6>Git/GitHub</h6>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-6">
+                                    <div class="feature-box feature-box-small ">
+                                        <div class="icon">
+                                            <i class="bx bxl-bootstrap"></i>
+                                        </div>
+                                        <h6>Bootstrap</h6>
                                     </div>
                                 </div>
                             </div>
@@ -231,9 +239,10 @@
                 </div>
             </div>
         </section>
+        <br><br><br>
 
-        <section id="Contact" class="section bf-dark">
-            <div class="container">
+        <section id="Contact" class="section bg-dark">
+            <div class="container" style="height: fit-content;">
                 <div class="row gy-5">
                     <div class="col-lg-6">
                         <div class="contact-form">
@@ -242,12 +251,71 @@
                              <form action="#">
                                 <div class="row gy-4 gx-3">
                                     <div class="col-12">
+                                        <div class="form-group">
                                         <label for="form-label">Name</label>
+                                        <input type="text" class="form-control" name="name">
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                        <label for="form-label">Email</label>
+                                        <input type="email" class="form-control" name="email">
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                        <label for="form-label">Subject</label>
+                                        <input type="text" class="form-control" name="Subject">
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                        <label for="form-label">Message</label>
+                                      <textarea name="Message" id="" rows="3" class="form-control"></textarea>
+                                    </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="colored-btn" type="submit">Send Message</button>
                                     </div>
                                 </div>
                              </form>
                         </div>
                     </div>
+                    <div class="col-lg-5 ms-auto col-xl-4">
+                        <div class="pb-5 d-none d-md-block contact-img">
+                            <img src="images/contctUS.jpg" alt="" >
+                        </div>
+                        <ul class="contact-infos">
+                            <li>
+                                <div class="icon bg-1">
+                                <i class="bx bx-phone"></i>
+                            </div>
+                            <div class="col ps-3">
+                                <h5>Phone</h5>
+                                <p>+91 9067174439</p>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="icon  bg-2">
+                                <i class="bx bxl-gmail"></i>
+                            </div>
+                            <div class="col ps-3">
+                                <h5>Email</h5>
+                                <p>sahaneomkar311@gmail.com</p>
+                            </div>
+                            </li>
+                            <li>
+                                <div class="icon  bg-3">
+                                <i class="bx bxl-linkedin"></i>
+                            </div>
+                            <div class="col ps-3">
+                                <h5>Linkedin</h5>
+                                <p><a href="https://www.linkedin.com/in/omkar-sahane11/">Linkedin</a></p>
+                            </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div> 
             </div>
         </section>

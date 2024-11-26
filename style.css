@@ -47,6 +47,8 @@ a {
     padding: 0 10px;
 }
 
+
+
 .main-header .navbar-nav > li > .nav-link {
     padding: 0 5px;
     line-height: 35px;
@@ -140,6 +142,12 @@ a {
         transform: translateY(-10px) rotate(-45deg);
     }
 
+}
+
+.fixed-header {
+background:rgba(255, 255, 255, 0.8) ;
+backdrop-filter: blur(10px);
+box-shadow: 0 0.125rem 0.125rem rgba(55, 55, 55, 0.07);
 }
 
 main{

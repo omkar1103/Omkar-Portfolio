@@ -484,10 +484,23 @@ main{
     font-weight: 600;
     margin-bottom: 10px;
 }
-
 @media (max-width:767px) {
     .feature-box h5{
         font-size: 24px;
+    }  
+}
+
+.feature-box img{
+    /* border: #45a049 solid 2px; */
+    max-width: 100%;
+     height: 300px;
+      border-radius: 8px; 
+      margin-bottom: 10px;
+}
+@media (max-width:767px) {
+    .feature-box img{
+        max-width: 90%;
+        height: 350px;
     }  
 }
 

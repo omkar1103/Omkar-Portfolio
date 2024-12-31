@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 :root {
     --primary-color: #fff;
     --secondary-color: #333;
@@ -380,17 +382,38 @@ main{
     100% { transform: translate(0, 0) rotate(0); }
 }
 
+.social_icons{
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    cursor:  progress;
+}
+.icon:hover{
+    color: var(--main-color);
+}
+
 .custom-button {
+    display: inline-block;     /* Make the <a> behave like a button */
     background-color: #aac60e; /* Green background */
-    color: white;             /* White text */
-    border: none;             /* Remove border */
-    padding: 12px 24px;       /* Add padding */
-    text-align: center;       /* Center text */
-    font-size: 16px;          /* Font size */
-    font-weight: bold;        /* Bold text */
-    border-radius: 8px;       /* Rounded corners */
-    cursor: pointer;          /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth background color change */
+    color: white;              /* White text */
+    text-decoration: none;     /* Remove underline */
+    padding: 12px 24px;        /* Add padding */
+    text-align: center;        /* Center text */
+    font-size: 16px;           /* Font size */
+    font-weight: bold;         /* Bold text */
+    border-radius: 8px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
 }
 
 .custom-button:hover {

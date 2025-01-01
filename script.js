@@ -7,4 +7,12 @@ document.addEventListener("scroll", function () {
     }
 });
 
+$(document).ready(function () {
+    new Typed('#type-it', {
+      strings: ['Web Developer', 'Frontend Developer', 'Java Developer'],
+      typeSpeed: 100,
+      loop: true
+    });
+  });
+
 

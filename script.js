@@ -9,7 +9,7 @@ document.addEventListener("scroll", function () {
 
 $(document).ready(function () {
     new Typed('#type-it', {
-      strings: ['Web Developer', 'Frontend Developer', 'Java Developer'],
+      strings: ['Web Developer', 'Frontend Developer', 'Backend Developer'],
       typeSpeed: 100,
       loop: true
     });
